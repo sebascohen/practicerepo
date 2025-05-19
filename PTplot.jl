@@ -18,17 +18,14 @@ plot(years, salaries1,
      title = "Salary Growth (9% Annual Increase)",
      legend = false,
      marker = :square,
+     label = "PT 3",
      linewidth = 2,
      yformatter = :plain)
-     
-     plot!(years, salaries2,
-     xlabel = "Years of Experience",
-     ylabel = "Salary (\$)",
-     title = "Salary Growth (3%/7% Annual Increase)",
-     legend = false,
+
+   plot!(years, salaries2,
+     label = "Manager",
      marker = :circle,
-     linewidth = 2,
-     yformatter = :plain)
+     linewidth = 2,)
      
      savefig("PTplot.png")
 
